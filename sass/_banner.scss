@@ -1,0 +1,112 @@
+.banner-one {
+    background: transparent url(../images/banner-bg-1-1.png) top right no-repeat;
+    background-size: cover;
+
+    padding-top: 294px;
+    padding-bottom: 310px;
+
+    @media(max-width: 1199px) {
+        padding-top: 215px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &__moc {
+        position: absolute;
+        bottom: -100px;
+        left: -240px;
+        @media(max-width: 1199px) {
+            bottom: -200px;
+        }
+        @media(max-width: 1199px) {
+            bottom: -100px;
+        }
+        animation-name: banner3Shake;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes banner3Shake {
+        0% {
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        30% {
+            transform: rotate3d(0, 0, 1, 5deg);
+        }
+
+        60% {
+            transform: rotate3d(1, 0, 0, 0deg);
+        }
+
+        80% {
+            transform: rotate3d(0, 0, 1, 5deg);
+        }
+
+        100% {
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+    }
+
+    &__title {
+        font-size: 70px;
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 1em;
+        margin: 0;
+        margin-bottom: 25px;
+        @media (max-width: 1199px) {
+            font-size: 46px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 18px;
+        line-height: 36px;
+        color: rgba(#fff, .9);
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}
+
+
+.banner-two {
+    background: transparent url(../images/banner-bg-2-1.png) top right no-repeat;
+    padding-top: 300px;
+    .container {
+        position: relative;
+        padding-bottom: 225px;
+    }
+
+    &__moc {
+        position: absolute;
+        bottom: -25px;
+        right: -30px;
+        animation: featureImgBounce 5s ease-in-out 0s infinite alternate;
+    }
+
+    &__title {
+        font-size: 70px;
+        color: $thm_black;
+        font-weight: bold;
+        line-height: 1em;
+        margin: 0;
+        margin-bottom: 25px;
+        @media (max-width: 1199px) {
+            font-size: 46px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 18px;
+        line-height: 36px;
+        color: #6d6d6d;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}

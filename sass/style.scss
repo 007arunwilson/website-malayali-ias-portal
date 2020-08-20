@@ -1,0 +1,114 @@
+/***************************************************************************************************************
+||||||||||||||||||||||||||||            MASTER STYLESHEET FOR appyng         ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. imported styles
+* 2. common styles
+* 3. header styles
+* 4. banner styles
+* 5. service styles
+* 6. brand styles
+* 7. video styles
+* 8. cta styles
+* 9. app-screen styles
+* 10. pricing styles
+* 11. testimonials styles
+* 12. funfact styles
+* 13. blog styles
+* 14. subscribe styles
+* 15. footer styles
+* 16. inner-banner styles
+* 17. sidebar styles
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+
+// helper functions
+@import 'helper-functions';
+
+/*
+* 1. imported styles
+*/
+@import 'imported';
+
+/*
+* 2. common styles
+*/
+@import 'common';
+
+/*
+* 3. header styles
+*/
+@import 'header';
+
+/*
+* 4. banner styles
+*/
+@import 'banner';
+
+/*
+* 5. service styles
+*/
+@import 'service';
+
+/*
+* 6. brand styles
+*/
+@import 'brand';
+
+/*
+* 7. video styles
+*/
+@import 'video';
+
+/*
+* 8. cta styles
+*/
+@import 'cta';
+
+/*
+* 9. app-screen styles
+*/
+@import 'app-screen';
+
+/*
+* 10. pricing styles
+*/
+@import 'pricing';
+
+/*
+* 11. testimonials styles
+*/
+@import 'testimonials';
+
+/*
+* 12. funfact styles
+*/
+@import 'funfact';
+
+/*
+* 13. blog styles
+*/
+@import 'blog';
+
+/*
+* 14. subscribe styles
+*/
+@import 'subscribe';
+
+/*
+* 15. footer styles
+*/
+@import 'footer';
+
+/*
+* 16. inner-banner styles
+*/
+@import 'inner-banner';
+
+/*
+* 17. sidebar styles
+*/
+@import 'sidebar';

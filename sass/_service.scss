@@ -1,0 +1,89 @@
+.service-one {
+	padding-bottom: 60px;
+	padding-top: 120px;
+	&__single {
+		text-align: center;
+	}
+	&__icon {
+		background-color: $thm_base_color;
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        perspective: 135px;
+        transform-style: preserve-3d;
+        &:before {
+        	content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-image: url(../images/shapes/service-shape-1-1.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            transform: translateZ(135px) perspective(100px) scale(1.5);
+            transition: transform 1s ease;
+        }
+        i {
+        	font-size: 58px;
+        	color: #fff;
+        	position: relative;
+        }
+	}
+	&__single:hover &__icon:before {
+    	transform: translateZ(0px) perspective(0) scale(1.0);
+    }
+    &__title {
+    	font-size: 22px;
+    	line-height: 34px;
+    	font-weight: bold;
+    	color: $thm_black;
+    	letter-spacing: .04em;
+    	text-transform: uppercase;
+    	margin-bottom: 30px;
+        @media (max-width: 1199px) {
+            font-size: 20px;
+        }
+    	a {
+    		color: $thm_black;
+    		transition: all .4s ease;
+    		&:hover {
+    			color: $thm_primary_color;
+    		}
+    	}
+    }
+    &__text {
+    	margin: 0;
+    	color: #6d6d6d;
+    	font-size: 18px;
+    	line-height: 34px;
+    }
+	[class*=col-lg] {        
+		margin-bottom: 60px;
+    }
+	[class*=col-lg]+ [class*=col-lg] {
+		border-left: 1px solid #e9e9e9;
+        @media(max-width: 991px) {
+            border-left: 0;
+            border-top: 1px solid #e9e9e9;
+            padding-top: 60px;
+        }
+	}
+}
