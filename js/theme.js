@@ -80,7 +80,7 @@
 
     }
 
-    if ($('.main-navigation .navigation-box .sub-menu').length) {
+    // if ($('.main-navigation .navigation-box .sub-menu').length) {
         var subMenu = $('.main-navigation .sub-menu');
         subMenu.parent('li').children('a').append(function () {
             return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
@@ -99,7 +99,7 @@
             Self.parent().parent().children('.sub-menu').slideToggle();
             return false;
         });
-    }
+    // }
     if ($('.video-popup').length) {
         $('.video-popup').magnificPopup({
             disableOn: 700,
